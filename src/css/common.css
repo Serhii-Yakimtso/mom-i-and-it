@@ -1,0 +1,93 @@
+*::before,
+*::after {
+  outline: 1px solid red;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+
+  background-color: #1c2225;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ===== COMMON MOBILE STYLES ===== */
+@media screen and (min-width: 320px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .container {
+    width: 375px;
+  }
+}
+
+/* ===== COMMON TABLET STYLES ===== */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+
+    width: 768px;
+  }
+}
+
+/* ===== COMMON DESKTOP STYLES ===== */
+@media screen and (min-width: 1280px) {
+  .section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+
+    width: 1440px;
+  }
+}

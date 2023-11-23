@@ -1,0 +1,10 @@
+:root {
+  /* fonts colors */
+  --mainColor: #fcf9f9;
+  --textColor: rgba(252, 249, 249, 0.4);
+  --accentColor: #ecd979;
+  --placeholderColor: rgba(252, 249, 249, 0.5);
+  --borderColor: rgba(252, 249, 249, 0.1);
+  --bcgColor: rgba(252, 249, 249, 0.1);
+  --focusInput: rgba(252, 249, 249, 0.6);
+}
