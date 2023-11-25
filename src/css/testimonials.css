@@ -1,0 +1,141 @@
+/* ========================= MOBILE_STYLE ========================= */
+.comments>.container {
+    padding: 80px 20px;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.comments-title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: -0.03em;
+    margin-bottom: 64px;
+
+    color: #FCF9F9;
+}
+
+.comments-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.comments-item:not(:first-child) {
+    display: none;
+}
+
+.comments-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 336px;
+
+    padding: 18px;
+    border: 1px solid rgba(252, 249, 249, 0.10);
+    outline: transparent;
+    border-radius: 4px;
+}
+
+.comments-img {
+    position: absolute;
+    top: -20px;
+    left: 40%;
+}
+
+.comments-name {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5em;
+    color: #FCF9F9;
+    padding-top: 34px;
+    margin-bottom: 8px;
+}
+
+.comments-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    color: rgba(252, 249, 249, 0.40);
+}
+
+/* ========================= /MOBILE_STYLE ========================= */
+
+
+/* ========================= TABLET_STYLE ========================= */
+
+
+@media screen and (min-width:768px) {
+    .comments>.container {
+        padding: 100px 32px;
+        max-width: 768px;
+
+    }
+
+    .comments-item:first-child {
+        margin-right: auto;
+    }
+
+    .comments-item:not(:first-child) {
+        display: flex;
+    }
+
+    .comments-item:last-child {
+        display: none;
+    }
+
+}
+
+
+/* ========================= /TABLET_STYLE ========================= */
+
+/* ========================= DESKTOP_1280_STYLE ========================= */
+
+@media screen and (min-width:1280px) {
+    .comments>.container {
+        padding: 150px 100px;
+        max-width: 1280px;
+
+    }
+
+    .comments-container {
+        justify-content: center;
+        align-items: normal;
+        gap: 26px;
+    }
+
+    .comments-item {
+        width: 346px;
+    }
+
+    .comments-item:first-child {
+        margin-right: 0;
+    }
+
+    .comments-item:last-child {
+        display: flex;
+    }
+
+    .comments-text {
+        font-size: 16px;
+    }
+}
+
+/* ========================= /DESKTOP_1280_STYLE ========================= */
+
+/* ========================= DESKTOP_1440_STYLE ========================= */
+
+@media screen and (min-width:1280px) {
+    .comments>.container {
+        max-width: 1440px;
+
+    }
+
+    .comments-item {
+        width: 396px;
+    }
+}
+
+/* ========================= /DESKTOP_1440_STYLE ========================= */
