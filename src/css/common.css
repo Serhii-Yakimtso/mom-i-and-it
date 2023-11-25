@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Manrope', sans-serif;
+  background-color: #1c2225;
 }
 
 .visually-hidden {
@@ -19,10 +20,6 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.container {
-  background-color: #1c2225;
 }
 
 /* ===== COMMON MOBILE STYLES ===== */
