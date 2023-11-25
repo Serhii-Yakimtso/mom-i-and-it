@@ -1,6 +1,7 @@
 .footer-container {
     padding-top: 40px;
     /* padding-bottom: 80px; */
+    /* background-image: url(../images/mobile/bg_footer_mobile.png); */
 }
 
 .footer-nav {
@@ -22,7 +23,7 @@ padding-right: 49px;
 
 
 .footer-link {
-    color: var(--white, #FCF9F9);
+    color: var(--mainColor);
     font-size: 14px;
     font-weight: 400;
     line-height: 1.29; /* 128.571% */
@@ -34,18 +35,15 @@ padding-right: 49px;
 
 
 .footer-text {
-    color: var(--white, #FCF9F9);
+    color: var(--mainColor);
     font-size: 44px;
     font-weight: 400;
     line-height: 1.23; /* 122.727% */
-    letter-spacing: -0.03;
+    letter-spacing: -0.03em;
     margin-bottom: 80px;
 }
 
 .footer-text-span {
-    color: var(--white, #ECD979);
+    color: var(--accentColor);
 }
 
-/* .footer-background {
-    padding-left: 0px;
-} */
