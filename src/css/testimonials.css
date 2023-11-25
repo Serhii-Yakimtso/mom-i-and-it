@@ -1,7 +1,8 @@
+/* ========================= MOBILE_STYLE ========================= */
 .comments>.container {
     padding: 80px 20px;
-    width: 375px;
-
+    max-width: 375px;
+    margin: 0 auto;
 }
 
 .comments-title {
@@ -15,14 +16,22 @@
 }
 
 .comments-container {
-    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.comments-item:not(:first-child) {
+    display: none;
 }
 
 .comments-item {
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
+    width: 336px;
 
     padding: 18px;
     border: 1px solid rgba(252, 249, 249, 0.10);
@@ -37,6 +46,9 @@
 }
 
 .comments-name {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5em;
     color: #FCF9F9;
     padding-top: 34px;
     margin-bottom: 8px;
@@ -48,3 +60,82 @@
     line-height: normal;
     color: rgba(252, 249, 249, 0.40);
 }
+
+/* ========================= /MOBILE_STYLE ========================= */
+
+
+/* ========================= TABLET_STYLE ========================= */
+
+
+@media screen and (min-width:768px) {
+    .comments>.container {
+        padding: 100px 32px;
+        max-width: 768px;
+
+    }
+
+    .comments-item:first-child {
+        margin-right: auto;
+    }
+
+    .comments-item:not(:first-child) {
+        display: flex;
+    }
+
+    .comments-item:last-child {
+        display: none;
+    }
+
+}
+
+
+/* ========================= /TABLET_STYLE ========================= */
+
+/* ========================= DESKTOP_1280_STYLE ========================= */
+
+@media screen and (min-width:1280px) {
+    .comments>.container {
+        padding: 150px 100px;
+        max-width: 1280px;
+
+    }
+
+    .comments-container {
+        justify-content: center;
+        align-items: normal;
+        gap: 26px;
+    }
+
+    .comments-item {
+        width: 346px;
+    }
+
+    .comments-item:first-child {
+        margin-right: 0;
+    }
+
+    .comments-item:last-child {
+        display: flex;
+    }
+
+    .comments-text {
+        font-size: 16px;
+    }
+}
+
+/* ========================= /DESKTOP_1280_STYLE ========================= */
+
+/* ========================= DESKTOP_1440_STYLE ========================= */
+
+@media screen and (min-width:1280px) {
+    .comments>.container {
+        max-width: 1440px;
+
+    }
+
+    .comments-item {
+        width: 396px;
+    }
+}
+
+/* ========================= /DESKTOP_1440_STYLE ========================= */
