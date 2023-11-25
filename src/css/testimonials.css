@@ -1,7 +1,5 @@
 /* ========================= MOBILE_STYLE ========================= */
-.comments-section {
-    padding: 80px 0;
-}
+
 
 .comments-title {
     font-size: 32px;
@@ -31,14 +29,14 @@
     text-align: center;
     width: 335px;
 
-    padding: 18px;
+    padding: 0 18px 18px 18px;
     border: 1px solid rgba(252, 249, 249, 0.10);
     border-radius: 4px;
 }
 
 .comments-img {
     position: absolute;
-    top: -20px;
+    top: -24px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -66,13 +64,9 @@
 
 
 @media screen and (min-width:768px) {
-    .comments-section>.container {
-        padding: 100px 32px;
 
-    }
-
-    .comments-item:first-child {
-        margin-right: auto;
+    .comments-container {
+        gap: 32px;
     }
 
     .comments-item:not(:first-child) {
@@ -91,9 +85,6 @@
 /* ========================= DESKTOP_1280_STYLE ========================= */
 
 @media screen and (min-width:1280px) {
-    .comments-section>.container {
-        padding: 150px 100px;
-    }
 
     .comments-container {
         justify-content: center;
@@ -123,10 +114,6 @@
 /* ========================= DESKTOP_1440_STYLE ========================= */
 
 @media screen and (min-width:1280px) {
-    .comments>.container {
-        max-width: 1440px;
-
-    }
 
     .comments-item {
         width: 396px;
