@@ -1,0 +1,31 @@
+.order-background {
+  max-width: 375px;
+  height: 550px;
+  background-image: url(../img/mobile/women_mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.order-title {
+  color: var(--mainColor);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1, 375; /* 137.5% */
+  letter-spacing: -0, 03em;
+}
+.order-span {
+  color: var(--accentColor);
+}
+@media screen and (max-width: 767px) {
+  .order-image {
+    display: none;
+  }
+}
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
