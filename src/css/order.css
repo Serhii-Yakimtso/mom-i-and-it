@@ -1,6 +1,6 @@
 .order-background {
   max-width: 375px;
-  height: 575px;
+  height: 550px;
   background-image: url(../img/mobile/women_mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,16 +11,14 @@
 .order-container {
 }
 .order-title {
-  color: var(--accentColor);
-
+  color: var(--mainColor);
   font-size: 32px;
-
   font-weight: 500;
-  line-height: 44px; /* 137.5% */
-  letter-spacing: -0.96px;
+  line-height: 1, 375; /* 137.5% */
+  letter-spacing: -0, 03em;
 }
 .order-span {
-  color: var(--mainColor);
+  color: var(--accentColor);
 }
 @media screen and (max-width: 767px) {
   .order-image {
@@ -30,5 +28,5 @@
 .order-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
 }
