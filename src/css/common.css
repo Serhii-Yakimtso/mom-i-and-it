@@ -24,13 +24,11 @@ body {
 
 .btn {
   display: inline-flex;
-  height: 49px;
-  padding: 14px 36px;
   justify-content: center;
   align-items: center;
   gap: 10px;
   border-radius: 15px;
-  border: 1px solid rgba(252, 249, 249, 0.1);
+  border: 1px solid var(--borderColor);
 }
 
 .link:hover,
@@ -55,6 +53,10 @@ body {
   .container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .btn {
+    height: 49px;
+    padding: 14px 36px;
   }
 }
 
@@ -106,5 +108,3 @@ body {
     width: 1440px;
   }
 }
-
-

@@ -6,7 +6,7 @@
       </svg>
       <p class="hero-text">all embroidery is made by hand</p>
     </div>
-    <div class="hero-component">
+    <div class="hero-box">
       <div>
         <h1 class="hero-title">
           Reviving the traditional
@@ -20,28 +20,29 @@
           </svg>
         </a>
       </div>
-
-      <img
-        class="hero-main-img"
-        srcset="
-          ./img/mobile/hero_mobile.jpg           335w,
-          ./img/tablet/hero_tablet.jpg           413w,
-          ./img/desktop_1280/hero_desktop.jpg    392w,
-          ./img/mobile/hero_mobile@2x.jpg        670w,
-          ./img/tablet/hero_tablet@2x.jpg        826w,
-          ./img/desktop_1280/hero_desktop@2x.jpg 784w
-        "
-        sizes="(min-width: 1280px) 392px, (min-width: 768px) 413px, (max-width: 767px) 335px"
-        src="./img/girl-mobile.jpg"
-        alt="girl in grey vyshivanka"
-      />
+      <div class="hero-box-img">
+        <img
+          class="hero-main-img"
+          srcset="
+            ./img/mobile/hero_mobile.jpg           335w,
+            ./img/tablet/hero_tablet.jpg           413w,
+            ./img/desktop_1280/hero_desktop.jpg    392w,
+            ./img/mobile/hero_mobile@2x.jpg        670w,
+            ./img/tablet/hero_tablet@2x.jpg        826w,
+            ./img/desktop_1280/hero_desktop@2x.jpg 784w
+          "
+          sizes="(min-width: 1280px) 392px, (min-width: 768px) 413px, (max-width: 767px) 335px"
+          src="./img/hero-mobile.jpg"
+          alt="girl in grey vyshivanka"
+        />
+        <img
+          class="hero-sub-img"
+          srcset="./img/tablet/ukraine@2x.png 2x"
+          src="./img/tablet/ukraine.png"
+          alt="ornament vyshivanka"
+          width="157"
+        />
+      </div>
     </div>
-    <img
-      class="hero-sub-img"
-      srcset="./img/tablet/ukraine@2x.png 2x"
-      src="./img/tablet/ukraine.png"
-      alt="ornament vyshivanka"
-      width="157"
-    />
   </div>
 </section>
