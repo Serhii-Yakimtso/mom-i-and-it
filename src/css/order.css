@@ -8,6 +8,13 @@
   margin: 0 auto;
   margin-bottom: 80px;
 }
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-psxel-ratio: 2) {
+  .order-background {
+    background-image: url(../img/mobile/women_mobile@2x.jpg);
+  }
+}
 
 .order-title {
   color: var(--mainColor);
@@ -15,8 +22,9 @@
   font-weight: 500;
   line-height: 1, 375; /* 137.5% */
   letter-spacing: -0, 03em;
+  margin-bottom: 40px;
 }
-.order-span {
+.order-title-custom {
   color: var(--accentColor);
 }
 @media screen and (max-width: 767px) {
@@ -27,5 +35,113 @@
 .order-form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+}
+.order-input {
+  max-width: 335px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid var(--borderColor);
+  color: var(--mainColor);
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  outline-color: transparent;
+  outline-offset: 4px;
+  outline-style: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.order-input::placeholder {
+  color: var(--placeholderColor);
+}
+.order-input:focus {
+  border-color: var(--focusInput);
+}
+.order-message {
+  max-width: 335px;
+  height: 196px;
+  padding: 14px 16px;
+  margin-bottom: 40px;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid var(--borderColor);
+  color: var(--mainColor);
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  resize: none;
+  outline-color: transparent;
+  outline-offset: 4px;
+  outline-style: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-message::placeholder {
+  color: var(--placeholderColor);
+}
+
+.order-message:focus {
+  border-color: var(--focusInput);
+}
+
+/* ========================TABLET================================ */
+@media screen and (min-width: 768px) {
+  .order-background {
+    max-width: 768px;
+    height: 776px;
+    background-image: url(../img/tablet/women_tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-psxel-ratio: 2) {
+    .order-background {
+      background-image: url(../img/tablet/women_tablet@2x.jpg);
+    }
+  }
+  .order-title {
+    font-size: 44px;
+    line-height: 1.32; /* 131.818% */
+  }
+  .order-input {
+    max-width: 508px;
+    font-size: 16px;
+  }
+
+  .order-message {
+    max-width: 508px;
+    font-size: 16px;
+  }
+  .order-text {
+    margin-bottom: 100px;
+  }
+  .order-image {
+    margin-left: auto;
+  }
+
+  .order-container {
+    position: relative;
+    padding-bottom: 80px;
+  }
+  .order-bg {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 324px;
+    height: 484px;
+    background-image: url(../img/tablet/bg_order_tablet.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-psxel-ratio: 2) {
+    .order-bg {
+      background-image: url(../img/tablet/bg_order_tablet@2x.png);
+    }
+  }
 }
