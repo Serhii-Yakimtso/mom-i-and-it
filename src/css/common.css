@@ -22,6 +22,22 @@ body {
   overflow: hidden;
 }
 
+.btn {
+  display: inline-flex;
+  height: 49px;
+  padding: 14px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accentColor);
+}
+
 /* ===== COMMON MOBILE STYLES ===== */
 @media screen and (min-width: 320px) {
   .container {
@@ -91,7 +107,4 @@ body {
   }
 }
 
-.link:hover,
-.link:focus {
-  color: var(--accentColor);
-}
+

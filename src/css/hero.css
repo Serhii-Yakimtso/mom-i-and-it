@@ -1,0 +1,39 @@
+.hero-title {
+  color: var(--mainColor);
+  font-size: 44px;
+  line-height: 1.23;
+  letter-spacing: -0.03em;
+  margin-bottom: 20px;
+}
+
+.hero-title-custom {
+  color: var(--accentColor);
+}
+
+.hero-main-img {
+  border-radius: 4px;
+}
+
+
+
+.hero-btn {
+  color: #fcf9f9;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  margin-left: 70px;
+  margin-bottom: 40px;
+}
+
+.hero-icon-arrow {
+  fill: var(--accentColor);
+  transform: rotate(330deg);
+}
+
+@media screen and (max-width: 767px) {
+  .hero-sub-img,
+  .hero-label {
+    display: none;
+  }
+}
