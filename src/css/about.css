@@ -34,14 +34,21 @@
   /* =============TABLET============== */
 }
 @media screen and (min-width: 768px) {
-  .title-text-wrapper {
-    margin-bottom: 40px;
-  }
   .about {
     background-image: url(../img/tablet/bg_about_tablet.png);
     padding-bottom: 50px;
     background-size: 369px 484px;
     max-width: 768px;
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-divice-pixel-ratio: 2) {
+    .about {
+      background-image: url(../img/tablet/bg_about_tablet@2x.png);
+    }
+  }
+  .title-text-wrapper {
+    margin-bottom: 40px;
   }
   .about-title {
     font-size: 44px;
@@ -51,14 +58,7 @@
     font-size: 16px;
   }
 }
-@media screen and (min-width: 768px),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx),
-  screen and (min-divice-pixel-ratio: 2) {
-  .about {
-    background-image: url(../img/tablet/bg_about_tablet@2x.png);
-  }
-}
+
 /* ========================DESKTOP 1280===================== */
 @media screen and (min-width: 1280px) {
   .about {
