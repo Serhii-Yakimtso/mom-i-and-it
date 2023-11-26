@@ -28,7 +28,6 @@
   margin-bottom: 40px;
 }
 .about-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: normal;
   letter-spacing: -0.04em;
@@ -70,6 +69,7 @@
     background-size: 385px 484px;
     padding-bottom: 80px;
     max-width: 1280px;
+    fon
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
@@ -94,6 +94,11 @@
     background-image: url(../img/desktop_1440/bg_about_1440.png);
     background-size: 545px 484px;
   }
+  /* ===============Видалити коли додадуть коммон стайл для цього розміру================= */
+  /* .about > .container {
+    width: 1440px;
+  } */
+
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
     screen and (min-divice-pixel-ratio: 2) {
