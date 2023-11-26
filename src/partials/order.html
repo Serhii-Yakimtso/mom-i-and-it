@@ -1,33 +1,43 @@
 <section class="section order">
   <div class="order-background"></div>
+
   <div class="container order-container">
-    <h2 class="order-title">
-      <span class="order-span">Your order </span>is our priority: Personalized
-      approach and quality of service
-    </h2>
-    <form class="order-form">
-      <input
-        class="order-input"
-        type="text"
-        required
-        pattern="[a-zA-Zа-яА-ЯіІєЄїЇ'йЙ]+"
-        placeholder="Enter your full name"
-      />
+    <div class="order-text">
+      <h2 class="order-title">
+        <span class="order-title-custom">Your order </span>is our priority:
+        Personalized approach and quality of service
+      </h2>
+      <form class="order-form">
+        <input
+          class="order-input"
+          type="text"
+          name="full-name"
+          required
+          pattern="[a-zA-Zа-яА-ЯіІєЄїЇ'йЙ]+"
+          placeholder="Enter your full name"
+        />
 
-      <input
-        class="order-input"
-        type="email"
-        required
-        placeholder="Enter your email"
-      />
+        <input
+          class="order-input"
+          type="email"
+          name="email"
+          required
+          placeholder="Enter your email"
+        />
 
-      <textarea
-        class="order-message"
-        name="user-comment"
-        id="user-comment"
-        placeholder="Coments"
-      ></textarea>
-    </form>
+        <textarea
+          class="order-message"
+          name="user-comment"
+          placeholder="Coments"
+        ></textarea>
+        <button class="order-button btn button">
+          SEND
+          <svg class="order-button-icon" width="24" height="10">
+            <use href="../img/svg/icons.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
     <img
       class="order-image"
       srcset="
@@ -41,5 +51,6 @@
       alt="ddd"
       width=""
     />
+    <div class="order-bg"></div>
   </div>
 </section>
