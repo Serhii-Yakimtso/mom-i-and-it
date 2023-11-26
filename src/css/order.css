@@ -103,10 +103,6 @@
     max-width: 768px;
     height: 776px;
     background-image: url(../img/tablet/women_tablet.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;
     margin-bottom: 80px;
   }
 
@@ -151,9 +147,6 @@
     width: 324px;
     height: 484px;
     background-image: url(../img/tablet/bg_order_tablet.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
@@ -169,11 +162,7 @@
     max-width: 1282px;
     height: 776px;
     background-image: url(../img/desktop_1280/women_1280.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;
-    margin-bottom: 80px;
+    margin-bottom: 150px;
   }
 
   @media screen and (min-resolution: 192dpi),
@@ -200,15 +189,8 @@
     margin-bottom: 0px;
   }
   .order-bg {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
     width: 288px;
-    height: 484px;
     background-image: url(../img/desktop_1280/bg_order_1280.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
@@ -224,11 +206,6 @@
     max-width: 1440px;
     height: 776px;
     background-image: url(../img/desktop_1440/women_1440.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;
-    margin-bottom: 80px;
   }
 
   @media screen and (min-resolution: 192dpi),
@@ -239,15 +216,8 @@
     }
   }
   .order-bg {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
     width: 324px;
-    height: 484px;
     background-image: url(../img/desktop_1440/bg_order_1440.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
