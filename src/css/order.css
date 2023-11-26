@@ -20,8 +20,8 @@
   color: var(--mainColor);
   font-size: 32px;
   font-weight: 500;
-  line-height: 1, 375; /* 137.5% */
-  letter-spacing: -0, 03em;
+  line-height: 1.375; /* 137.5% */
+  letter-spacing: -0.03em;
   margin-bottom: 40px;
 }
 .order-title-custom {
@@ -135,7 +135,7 @@
     background-image: url(../img/tablet/bg_order_tablet.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
