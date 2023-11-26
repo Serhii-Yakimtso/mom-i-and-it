@@ -1,0 +1,242 @@
+/* ===== Our Collection Mobile Styles ===== */
+
+.collection {
+  padding-top: 18px;
+  padding-bottom: 80px;
+  background-color: #1C2225; 
+}
+
+.collection-container {
+  background-image: url('../img/mobile/bg_price_mobile.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 0px 254px;
+}
+
+.collection-section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.38;
+  letter-spacing: -0.03em;
+  color: var(--white, #fcf9f9);
+  margin-bottom: 40px;
+}
+
+.collection-list {
+  display: block;
+}
+
+.collection-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.collection-overlay-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 335px;
+}
+
+.collection-list-img {
+  border-radius: 4px;
+}
+
+.collection-list-name {
+  padding-top: 18px;
+}
+
+.collection-list-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--white, #fcf9f9);
+  margin-bottom: 8px;
+}
+
+.collection-list-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: rgba(252, 249, 249, 0.4);
+}
+
+.collection-text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  color: var(--white, #fcf9f9);
+  background-color: var(--yellow, #ECD979);
+  overflow: auto;
+  padding: 40px 32px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.collection-list-item:hover .collection-text-overlay {
+  transform: translateY(0%);
+}
+
+@media screen and (max-width: 374px) {
+  .collection-overlay-wrapper {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .collection-container {
+    background-image: url('../img/mobile/bg_price_mobile@2x');
+  }
+}
+/* ===== /Our Collection Mobile Styles ===== */
+
+
+
+/* ===== Our Collection Tablet Styles ===== */
+
+@media screen and (min-width: 768px) {
+  .collection {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  
+  .collection-container {
+    background-image: url('../img/tablet/bg_price_tablet.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 0px 221px;
+  }
+
+  .collection-section-title {
+    text-align: center;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.45;
+    letter-spacing: -0.03em;
+    color: var(--white, #fcf9f9);
+    margin-bottom: 40px;
+  }
+
+  .collection-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 20px;
+  }
+
+  .collection-list-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .collection-overlay-wrapper {
+    width: 342px;
+  }
+ 
+  .collection-list-title {
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    width: 342px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--white, #fcf9f9);
+    margin-bottom: 8px;
+  }
+
+  .collection-list-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: rgba(252, 249, 249, 0.4);
+  }
+
+  .collection-text-overlay {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .collection-container {
+    background-image: url('../img/tablet/bg_price_tablet@2x.png');
+  }
+}
+/* ===== /Our Collection Tablet Styles ===== */
+
+
+/* ===== Our Collection Desktop_1280 Styles ===== */
+
+@media screen and (min-width: 1280px) {
+  .collection {
+    padding-top: 70px;
+    padding-bottom: 150px;
+  }
+
+  .collection-container {
+    background-image: url('../img/desktop_1280/bg_price_desktop.png');
+  }
+
+  .collection-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19.5px;
+    row-gap: 40px;
+  }
+
+  .collection-overlay-wrapper {
+    width: 347px;
+  }
+
+  .collection-list-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 335px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+  .collection-container {
+    background-image: url('../img/desktop_1280/bg_price_desktop@2x.png');
+  }
+}
+/* ===== /Our Collection Desktop_1280 Styles ===== */
+
+
+
+/* ===== Our Collection Desktop_1440 Styles ===== */
+
+@media screen and (min-width: 1440px) {
+  .collection-list {
+    gap: 20px;
+  }
+
+  .collection-overlay-wrapper {
+    width: 400px;
+  }
+}
+/* ===== /Our Collection Desktop_1440 Styles ===== */
