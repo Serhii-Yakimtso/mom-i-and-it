@@ -110,7 +110,7 @@
 
   .hero-title {
     width: 518px;
-    padding-top: 114px;
+    padding-top: 94px;
   }
 
   .hero-label {
@@ -130,5 +130,18 @@
 
   .hero-btn:hover {
     border: 1px solid var(--accentColor);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero-title {
+    padding-top: 66px;
+    width: 630px;
+    font-size: 64px;
+    line-height: 1.16;
+    margin-right: 61px;
+  }
+
+  .hero-label {
+    top: 66px;
   }
 }
