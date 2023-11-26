@@ -1,0 +1,100 @@
+.about {
+  background-image: url(../img/mobile/bg_about_mobile.png);
+  background-size: 250px 408px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding-bottom: 62px;
+  max-width: 375px;
+  margin: 0 auto;
+}
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-divice-pixel-ratio: 2) {
+  .about {
+    background-image: url(../img/mobile/bg_about_mobile@2x.png);
+  }
+}
+.title-text-wrapper {
+  margin-bottom: 50px;
+}
+.about-title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.375;
+  letter-spacing: -0.03em;
+  color: var(--mainColor);
+  margin-bottom: 40px;
+}
+.about-text {
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: -0.04em;
+  color: var(--textColor);
+  margin-bottom: 20px;
+  /* =============TABLET============== */
+}
+@media screen and (min-width: 768px) {
+  .about {
+    background-image: url(../img/tablet/bg_about_tablet.png);
+    padding-bottom: 50px;
+    background-size: 369px 484px;
+    max-width: 768px;
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-divice-pixel-ratio: 2) {
+    .about {
+      background-image: url(../img/tablet/bg_about_tablet@2x.png);
+    }
+  }
+  .title-text-wrapper {
+    margin-bottom: 40px;
+  }
+  .about-title {
+    font-size: 44px;
+    line-height: 1.45;
+  }
+  .about-text {
+    font-size: 16px;
+  }
+}
+
+/* ========================DESKTOP 1280===================== */
+@media screen and (min-width: 1280px) {
+  .about {
+    background-image: url(../img/desktop_1280/bg_about_1280.png);
+    background-size: 385px 484px;
+    padding-bottom: 80px;
+    max-width: 1280px;
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-divice-pixel-ratio: 2) {
+    .about {
+      background-image: url(../img/desktop_1280/bg_about_1280@2x.png);
+    }
+  }
+  .about-container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+  .title-text-wrapper {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about {
+    max-width: 1440px;
+    background-image: url(../img/desktop_1440/bg_about_1440.png);
+    background-size: 545px 484px;
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-divice-pixel-ratio: 2) {
+    .about {
+      background-image: url(../img/desktop_1440/bg_about_1440@2x.png);
+    }
+  }
+}
