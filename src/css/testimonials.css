@@ -16,7 +16,7 @@
 
 .comments-container {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     flex-direction: row;
 }
 
@@ -45,13 +45,13 @@
 }
 
 .comments-wrapper {
-    padding-top: 44px;
+    padding-top: 54px;
 }
 
 .comments-name {
     font-size: 20px;
     font-weight: 600;
-    line-height: 1.5em;
+    line-height: 1.5;
     color: var(--mainColor);
     margin-bottom: 8px;
 }
@@ -72,7 +72,12 @@
 @media screen and (min-width:768px) {
 
     .comments-container {
+        justify-content: center;
         gap: 32px;
+    }
+
+    .comments-item {
+        width: 336px;
     }
 
     .comments-item:not(:first-child) {
@@ -93,17 +98,11 @@
 @media screen and (min-width:1280px) {
 
     .comments-container {
-        justify-content: center;
-        align-items: normal;
-        gap: 26px;
+        justify-content: space-between;
     }
 
     .comments-item {
-        width: 346px;
-    }
-
-    .comments-item:first-child {
-        margin-right: 0;
+        width: calc((100%-52px) / 3);
     }
 
     .comments-item:last-child {
@@ -119,7 +118,7 @@
 
 /* ========================= DESKTOP_1440_STYLE ========================= */
 
-@media screen and (min-width:1280px) {
+@media screen and (min-width:1440px) {
 
     .comments-item {
         width: 396px;
