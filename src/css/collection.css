@@ -1,16 +1,20 @@
 /* ===== Our Collection Mobile Styles ===== */
 
 .collection {
-  padding-top: 18px;
-  padding-bottom: 80px;
-  background-color: #1C2225; 
+  padding-top: 18px; 
 }
 
 .collection-container {
   background-image: url('../img/mobile/bg_price_mobile.png');
-  background-size: auto;
+  background-size: 72px 177px;
   background-repeat: no-repeat;
-  background-position: 0px 254px;
+  background-position: 0px 241px;
+}
+
+@media screen and (min-width: 375px) {
+  .collection-container {
+    background-position: 0px 298px;
+  }
 }
 
 .collection-section-title {
@@ -19,12 +23,8 @@
   font-weight: 500;
   line-height: 1.38;
   letter-spacing: -0.03em;
-  color: var(--white, #fcf9f9);
+  color: var(--mainColor);
   margin-bottom: 40px;
-}
-
-.collection-list {
-  display: block;
 }
 
 .collection-list-item:not(:last-child) {
@@ -35,9 +35,6 @@
   position: relative;
   overflow: hidden;
   width: 335px;
-}
-
-.collection-list-img {
   border-radius: 4px;
 }
 
@@ -51,7 +48,7 @@
   line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--white, #fcf9f9);
+  color: var(--mainColor);
   margin-bottom: 8px;
 }
 
@@ -60,7 +57,7 @@
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.05em;
-  color: rgba(252, 249, 249, 0.4);
+  color: var(--textColor);
 }
 
 .collection-text-overlay {
@@ -70,13 +67,11 @@
   width: 100%;
   height: 100%;
   font-size: 14px;
-  font-weight: 400;
   line-height: 1.4;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  border-radius: 4px;
-  color: var(--white, #fcf9f9);
-  background-color: var(--yellow, #ECD979);
+  color: var(--white, #1C2225);
+  background-color: var(--accentColor);
   overflow: auto;
   padding: 40px 32px;
   transform: translateY(100%);
@@ -97,7 +92,7 @@
   screen and (min-resolution: 2dppx) and (max-width: 767px),
   screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
   .collection-container {
-    background-image: url('../img/mobile/bg_price_mobile@2x');
+    background-image: url('../img/mobile/bg_price_mobile@2x.png');
   }
 }
 /* ===== /Our Collection Mobile Styles ===== */
@@ -114,26 +109,19 @@
   
   .collection-container {
     background-image: url('../img/tablet/bg_price_tablet.png');
-    background-size: auto;
-    background-repeat: no-repeat;
+    background-size: 114px 300px;
     background-position: 0px 221px;
   }
 
   .collection-section-title {
-    text-align: center;
     font-size: 44px;
-    font-weight: 500;
     line-height: 1.45;
-    letter-spacing: -0.03em;
-    color: var(--white, #fcf9f9);
-    margin-bottom: 40px;
   }
 
   .collection-list {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    row-gap: 20px;
   }
 
   .collection-list-item:not(:last-child) {
@@ -145,7 +133,6 @@
   }
  
   .collection-list-title {
-    
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -153,27 +140,14 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     font-size: 18px;
-    font-weight: 500;
-    line-height: 1;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--white, #fcf9f9);
-    margin-bottom: 8px;
   }
 
   .collection-list-text {
     font-size: 18px;
-    font-weight: 400;
-    line-height: 1;
-    letter-spacing: 0.05em;
-    color: rgba(252, 249, 249, 0.4);
   }
 
   .collection-text-overlay {
     font-size: 18px;
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: 0.05em;
   }
 }
 
@@ -197,12 +171,11 @@
 
   .collection-container {
     background-image: url('../img/desktop_1280/bg_price_desktop.png');
+    background-size: 169px 300px;
   }
 
   .collection-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 19.5px;
+    column-gap: 19.5px;
     row-gap: 40px;
   }
 
@@ -211,8 +184,6 @@
   }
 
   .collection-list-title {
-    overflow: hidden;
-    text-overflow: ellipsis;
     width: 335px;
   }
 }
@@ -232,7 +203,7 @@
 
 @media screen and (min-width: 1440px) {
   .collection-list {
-    gap: 20px;
+    column-gap: 20px;
   }
 
   .collection-overlay-wrapper {
