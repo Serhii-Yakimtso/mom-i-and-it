@@ -12,8 +12,6 @@
   screen and (min-divice-pixel-ratio: 2) {
   .about {
     background-image: url(../img/mobile/bg_about_mobile@2x.png);
-    background-size: 250px 408px;
-    background-repeat: no-repeat;
   }
 }
 .title-text-wrapper {
@@ -45,21 +43,20 @@
     background-size: 369px 484px;
     max-width: 768px;
   }
-  @media screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx),
-    screen and (min-divice-pixel-ratio: 2) {
-    .about {
-      background-image: url(../img/tablet/bg_about_tablet@2x.png);
-      background-size: 369px 484px;
-      background-repeat: no-repeat;
-    }
-  }
   .about-title {
     font-size: 44px;
     line-height: 1.45;
   }
   .about-text {
     font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-divice-pixel-ratio: 2) {
+  .about {
+    background-image: url(../img/tablet/bg_about_tablet@2x.png);
   }
 }
 /* ========================DESKTOP 1280===================== */
@@ -75,13 +72,12 @@
     screen and (min-divice-pixel-ratio: 2) {
     .about {
       background-image: url(../img/desktop_1280/bg_about_1280@2x.png);
-      background-size: 385px 484px;
-      background-repeat: no-repeat;
     }
   }
-  .about > .container {
+  .about-container {
     display: flex;
     gap: 50px;
+    align-items: center;
   }
   .title-text-wrapper {
     margin-bottom: 0;
@@ -93,18 +89,12 @@
     background-image: url(../img/desktop_1440/bg_about_1440.png);
     background-size: 545px 484px;
   }
-  /* ===============Видалити коли додадуть коммон стайл для цього розміру================= */
-  /* .about > .container {
-    width: 1440px;
-  } */
 
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
     screen and (min-divice-pixel-ratio: 2) {
     .about {
       background-image: url(../img/desktop_1440/bg_about_1440@2x.png);
-      background-size: 545px 484px;
-      background-repeat: no-repeat;
     }
   }
 }
