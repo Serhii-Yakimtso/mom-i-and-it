@@ -1,0 +1,53 @@
+/* .about {
+  background-image: url(../img/mobile/bg_about_mobile.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-divice-pixel-ratio: 2) {
+  .about {
+    background-image: url(../img/mobile/bg_about_mobile@2x.png);
+  }
+} */
+.title-text-wrapper {
+  margin-bottom: 50px;
+}
+.about-title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.375;
+  letter-spacing: -0.03em;
+  color: var(--mainColor);
+  margin-bottom: 40px;
+}
+.about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: -0.04em;
+  color: var(--textColor);
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .title-text-wrapper {
+    margin-bottom: 40px;
+  }
+  .about-title {
+    font-size: 44px;
+    line-height: 1.45;
+  }
+  .about-text {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about > .container {
+    display: flex;
+    gap: 50px;
+  }
+  .title-text-wrapper {
+    margin-bottom: 0;
+  }
+}
