@@ -82,19 +82,30 @@
 .order-message:focus {
   border-color: var(--focusInput);
 }
-
+.order-button {
+  padding: 14px 36px;
+  background-color: transparent;
+  color: var(--mainColor);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.order-button-icon {
+  transform: rotate(-30deg);
+  fill: var(--accentColor);
+}
 /* ========================TABLET================================ */
 @media screen and (min-width: 768px) {
   .order-background {
     max-width: 768px;
     height: 776px;
     background-image: url(../img/tablet/women_tablet.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;
     margin-bottom: 80px;
   }
+
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
     screen and (min-device-psxel-ratio: 2) {
@@ -115,6 +126,9 @@
     max-width: 508px;
     font-size: 16px;
   }
+  .order-button {
+    margin-left: 0;
+  }
   .order-text {
     margin-bottom: 100px;
   }
@@ -133,15 +147,83 @@
     width: 324px;
     height: 484px;
     background-image: url(../img/tablet/bg_order_tablet.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
     screen and (min-device-psxel-ratio: 2) {
     .order-bg {
       background-image: url(../img/tablet/bg_order_tablet@2x.png);
+    }
+  }
+}
+/* ============DESKTOP 1280=============== */
+@media screen and (min-width: 1280px) {
+  .order-background {
+    max-width: 1282px;
+    height: 776px;
+    background-image: url(../img/desktop_1280/women_1280.jpg);
+    margin-bottom: 150px;
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-psxel-ratio: 2) {
+    .order-background {
+      background-image: url(../img/desktop_1280/women_1280@2x.jpg);
+    }
+  }
+  .order-container {
+    padding-left: 64px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+  .order-image {
+    width: 524px;
+    height: 521px;
+    flex-shrink: 0;
+    margin: 0;
+  }
+  .order-text {
+    margin-bottom: 0px;
+  }
+  .order-bg {
+    width: 288px;
+    background-image: url(../img/desktop_1280/bg_order_1280.png);
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-psxel-ratio: 2) {
+    .order-bg {
+      background-image: url(../img/desktop_1280/bg_order_1280@2x.png);
+    }
+  }
+}
+/* ============DESKTOP 1440=============== */
+@media screen and (min-width: 1440px) {
+  .order-background {
+    max-width: 1440px;
+    height: 776px;
+    background-image: url(../img/desktop_1440/women_1440.jpg);
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-psxel-ratio: 2) {
+    .order-background {
+      background-image: url(../img/desktop_1440/women_1440@2x.jpg);
+    }
+  }
+  .order-bg {
+    width: 324px;
+    background-image: url(../img/desktop_1440/bg_order_1440.png);
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-psxel-ratio: 2) {
+    .order-bg {
+      background-image: url(../img/desktop_1440/bg_order_1440@2x.png);
     }
   }
 }
