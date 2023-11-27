@@ -12,12 +12,11 @@
 .social-media {
   display: flex;
   gap: 12px;
-  margin-left: 20px;
 }
 
 .social-media-item {
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .social-links {
@@ -86,6 +85,10 @@
     line-height: 1.42;
     text-transform: uppercase;
     font-style: normal;
+  }
+
+  .social-media {
+    margin-left: 20px;
   }
 
   .header-contacts-link:hover,
