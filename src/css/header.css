@@ -15,7 +15,12 @@
   margin-left: auto;
 }
 
-.social-media-icon {
+.social-media-item {
+  padding-top: 4 px;
+  padding-bottom: 4px;
+}
+
+.social-links {
   width: 44px;
   height: 44px;
   border-radius: 15px;
@@ -44,8 +49,20 @@
 .open-burger-btn {
   border: none;
   background-color: transparent;
-  padding-left: 12px;
+  margin-left: 12px;
   line-height: 0;
+  padding: 0;
+}
+
+.burger-btn-icon {
+  width: 36px;
+  height: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .open-burger-btn {
+    margin-left: 20px;
+  }
 }
 
 /* ===== COMMON DESKTOP STYLES ===== */
@@ -57,10 +74,6 @@
     gap: 25px;
   }
 
-  .open-burger-btn {
-    padding-left: 20px;
-  }
-
   .header-contacts-link {
     display: block;
     padding: 14px 28px;
@@ -70,6 +83,7 @@
     font-size: 14px;
     line-height: 1.42;
     text-transform: uppercase;
+    font-style: normal;
   }
 
   .header-contacts-link:hover,
