@@ -148,7 +148,7 @@
     position: absolute;
     left: 0px;
     bottom: 0px;
-    width: 324px;
+    width: 323px;
     height: 484px;
     background-image: url(../img/tablet/bg_order_tablet.png);
   }
@@ -198,7 +198,7 @@
     border-color: var(--accentColor);
   }
   .order-bg {
-    width: 288px;
+    width: 289px;
     background-image: url(../img/desktop_1280/bg_order_1280.png);
   }
   @media screen and (min-resolution: 192dpi),
@@ -225,7 +225,7 @@
     }
   }
   .order-bg {
-    width: 324px;
+    width: 325px;
     background-image: url(../img/desktop_1440/bg_order_1440.png);
   }
   @media screen and (min-resolution: 192dpi),
