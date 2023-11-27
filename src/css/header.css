@@ -12,7 +12,7 @@
 .social-media {
   display: flex;
   gap: 12px;
-  margin-left: auto;
+  margin-left: 20px;
 }
 
 .social-media-item {
@@ -20,7 +20,11 @@
   padding-bottom: 4px;
 }
 
+.social-media-icon {
+}
+
 .social-links {
+  display: flex;
   width: 44px;
   height: 44px;
   border-radius: 15px;
@@ -60,9 +64,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .open-burger-btn {
-    margin-left: 20px;
-  }
 }
 
 /* ===== COMMON DESKTOP STYLES ===== */
