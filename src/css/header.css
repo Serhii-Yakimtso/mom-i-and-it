@@ -14,10 +14,6 @@
   display: none;
 }
 
-.header-contacts {
-  margin-left: auto;
-}
-
 .social-media {
   display: flex;
   gap: 12px;
@@ -88,6 +84,7 @@
 
   .header-contacts {
     display: block;
+    margin-left: auto;
   }
 
   .header-contacts-link {
