@@ -2,7 +2,7 @@
 /* ===============FOOTER MOBIL STYLES================ */
 
 .page-footer {
-    /* height: 649px; */
+   padding-bottom: 0;
     
 
 }
@@ -38,7 +38,7 @@
 .footer-link {
     color: var(--mainColor);
     font-size: 14px;
-    font-weight: 400;
+    /* font-weight: 400; */
     line-height: 1.29; 
     text-transform: uppercase;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -48,7 +48,7 @@
 .footer-text {
     color: var(--mainColor);
     font-size: 44px;
-    font-weight: 400;
+    /* font-weight: 400; */
     line-height: 1.23; 
     letter-spacing: -0.03em;    
 }
@@ -57,10 +57,6 @@
     color: var(--accentColor);
 }
 
-.footer-link:hover,
-.footer-link:focus {
-    color: var(--accentColor);
-}
 
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
     screen and (min-resolution: 2dppx) and (max-width: 767px),
@@ -76,8 +72,12 @@
 @media screen and (min-width: 768px) {
     .footer-list-wrapper {
         flex-direction: row;
-        gap: 40px;
+        gap: 25px;
     }  
+
+    .footer-list {
+        gap: 25px;
+    }
 
     .footer-text {
         font-size: 54px;
@@ -87,7 +87,7 @@
 
     .footer-container {
         background-image: url(../img/tablet/bg_footer_tablet.png);
-        background-position: right;
+        background-position: top right;
         background-size: 174px 370px;
         padding-right: 0;
         padding-bottom: 40px;
