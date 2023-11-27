@@ -16,7 +16,7 @@
 }
 
 .social-media-item {
-  padding-top: 4 px;
+  padding-top: 4px;
   padding-bottom: 4px;
 }
 
@@ -28,13 +28,13 @@
   align-items: center;
   justify-content: center;
   border: 1px solid var(--borderColor);
-  background: -var(--bcgColor);
+  background: var(--bcgColor);
   fill: var(--mainColor);
   padding: 8px;
 }
 
-.social-media-icon:hover,
-.social-media-icon:focus {
+.social-links:hover,
+.social-links:focus {
   border: 1px solid var(--accentColor);
 }
 
@@ -61,6 +61,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .burger-btn-icon {
+    width: 44px;
+    height: 30px;
+  }
 }
 
 /* ===== COMMON DESKTOP STYLES ===== */
