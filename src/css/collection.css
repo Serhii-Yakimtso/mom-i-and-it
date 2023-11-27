@@ -90,10 +90,6 @@
   .collection-container {
     background-position: 0px 241px;
   }
-
-  /*.collection-list-item {
-    max-width: 100%;
-  }*/
 }
 
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
