@@ -75,7 +75,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
 }
 
 .menu-modal-svg {
-    stroke: var(--darkColor);
+    stroke: var(--overlayColor);
 }
 
 .menu-modal-svg-tablet {
@@ -126,7 +126,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
 
     .menu-modal-svg-tablet {
         display: block;
-        stroke: var(--darkColor);
+        stroke: var(--overlayColor);
     }
 
     .menu-number-link {
