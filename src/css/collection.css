@@ -1,7 +1,7 @@
 /* ===== Our Collection Mobile Styles ===== */
 
 .collection {
-  padding-top: 18px; 
+  padding-top: 18px;
 }
 
 .collection-container {
@@ -28,7 +28,6 @@
 .collection-overlay-wrapper {
   position: relative;
   overflow: hidden;
-  width: 335px;
   border-radius: 4px;
 }
 
@@ -36,11 +35,17 @@
   padding-top: 18px;
 }
 
+@media screen and (max-width: 374px) {
+  .collection-list-item {
+    max-width: 100%;
+    width: 335px;
+  }
+}
+
 .collection-list-title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 335px;
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
@@ -69,7 +74,7 @@
   line-height: 1.4;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--white, #1C2225);
+  color: var(--overlayColor);
   background-color: var(--accentColor);
   overflow: auto;
   padding: 40px 32px;
@@ -86,13 +91,9 @@
     background-position: 0px 241px;
   }
 
-  .collection-list-title {
-    max-width: 320px;
-  }
-  
-  .collection-overlay-wrapper {
+  /*.collection-list-item {
     max-width: 100%;
-  }
+  }*/
 }
 
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -104,8 +105,6 @@
 }
 /* ===== /Our Collection Mobile Styles ===== */
 
-
-
 /* ===== Our Collection Tablet Styles ===== */
 
 @media screen and (min-width: 768px) {
@@ -113,7 +112,7 @@
     padding-top: 50px;
     padding-bottom: 100px;
   }
-  
+
   .collection-container {
     background-image: url('../img/tablet/bg_price_tablet.png');
     background-size: 114px 300px;
@@ -130,17 +129,16 @@
     flex-wrap: wrap;
     gap: 20px;
   }
+  
+  .collection-list-item {
+  width: 342px;
+  }
 
   .collection-list-item:not(:last-child) {
     margin-bottom: 0;
   }
 
-  .collection-overlay-wrapper {
-    width: 342px;
-  }
- 
   .collection-list-title {
-    max-width: 342px;
     font-size: 18px;
   }
 
@@ -162,7 +160,6 @@
 }
 /* ===== /Our Collection Tablet Styles ===== */
 
-
 /* ===== Our Collection Desktop_1280 Styles ===== */
 
 @media screen and (min-width: 1280px) {
@@ -181,12 +178,8 @@
     row-gap: 40px;
   }
 
-  .collection-overlay-wrapper {
+  .collection-list-item {
     width: 347px;
-  }
-
-  .collection-list-title {
-    max-width: 347px;
   }
 }
 
@@ -199,8 +192,6 @@
 }
 /* ===== /Our Collection Desktop_1280 Styles ===== */
 
-
-
 /* ===== Our Collection Desktop_1440 Styles ===== */
 
 @media screen and (min-width: 1440px) {
@@ -208,12 +199,8 @@
     column-gap: 20px;
   }
 
-  .collection-overlay-wrapper {
+  .collection-list-item {
     width: 400px;
-  }
-
-  .collection-list-title {
-    max-width: 400px;
   }
 }
 /* ===== /Our Collection Desktop_1440 Styles ===== */
