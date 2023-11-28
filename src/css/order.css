@@ -104,7 +104,7 @@
     max-width: 768px;
     height: 776px;
     background-image: url(../img/tablet/women_tablet.jpg);
-    margin-bottom: 80px;
+    margin-bottom: 100px;
   }
 
   @media screen and (min-resolution: 192dpi),
