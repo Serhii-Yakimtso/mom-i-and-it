@@ -1,12 +1,19 @@
+html {
+  scroll-behavior: smooth;
+}
 *::before,
 *::after {
   outline: 1px solid red;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Manrope', sans-serif;
   background-color: #1c2225;
+}
+.header-position {
+  visibility: hidden;
+  top: -92px;
+  position: relative;
 }
 
 .visually-hidden {
@@ -62,7 +69,7 @@ body {
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
   .container {
-    width: 375px;
+    max-width: 375px;
   }
 }
 
@@ -77,7 +84,7 @@ body {
     padding-left: 32px;
     padding-right: 32px;
 
-    width: 768px;
+    max-width: 768px;
   }
 }
 
@@ -105,6 +112,6 @@ body {
     padding-left: 100px;
     padding-right: 100px;
 
-    width: 1440px;
+    max-width: 1440px;
   }
 }

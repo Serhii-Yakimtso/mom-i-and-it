@@ -1,128 +1,124 @@
 /* ========================= MOBILE_STYLE ========================= */
 
 .comments {
-    padding-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .comments-title {
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 1.375;
-    letter-spacing: -0.03em;
-    margin-bottom: 64px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.375;
+  letter-spacing: -0.03em;
+  margin-bottom: 64px;
 
-    color: var(--mainColor);
+  color: var(--mainColor);
 }
 
 .comments-container {
-    display: flex;
-    align-items: stretch;
-    flex-direction: row;
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
 }
 
 .comments-item:not(:first-child) {
-    display: none;
+  display: none;
 }
 
 .comments-item {
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    width: 335px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 335px;
 
-    padding: 0 18px 18px 18px;
-    border: 1px solid rgba(252, 249, 249, 0.10);
-    border-radius: 4px;
+  padding: 0 18px 18px 18px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 4px;
 }
 
 .comments-img {
-    position: absolute;
-    top: -24px;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .comments-wrapper {
-    padding-top: 54px;
+  padding-top: 54px;
 }
 
 .comments-name {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1.5;
-    color: var(--mainColor);
-    margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--mainColor);
+  margin-bottom: 8px;
 }
 
 .comments-text {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
-    color: var(--textColor);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--textColor);
 }
 
 /* ========================= /MOBILE_STYLE ========================= */
 
-
 /* ========================= TABLET_STYLE ========================= */
 
+@media screen and (min-width: 768px) {
+  .comments-container {
+    justify-content: center;
+    gap: 32px;
+  }
 
-@media screen and (min-width:768px) {
+  .comments-item {
+    width: 336px;
+  }
 
-    .comments-container {
-        justify-content: center;
-        gap: 32px;
-    }
+  .comments-item:not(:first-child) {
+    display: flex;
+  }
 
-    .comments-item {
-        width: 336px;
-    }
-
-    .comments-item:not(:first-child) {
-        display: flex;
-    }
-
-    .comments-item:last-child {
-        display: none;
-    }
-
+  .comments-item:last-child {
+    display: none;
+  }
 }
-
 
 /* ========================= /TABLET_STYLE ========================= */
 
 /* ========================= DESKTOP_1280_STYLE ========================= */
 
-@media screen and (min-width:1280px) {
+@media screen and (min-width: 1280px) {
+  .comments-container {
+    justify-content: space-between;
+  }
 
-    .comments-container {
-        justify-content: space-between;
-    }
+  .comments-item {
+    width: calc((100%-52px) / 3);
+  }
 
-    .comments-item {
-        width: calc((100%-52px) / 3);
-    }
+  .comments-item:last-child {
+    display: flex;
+  }
 
-    .comments-item:last-child {
-        display: flex;
-    }
-
-    .comments-text {
-        font-size: 16px;
-    }
+  .comments-text {
+    font-size: 16px;
+  }
+  .testimonials-position {
+    top: 0;
+  }
 }
 
 /* ========================= /DESKTOP_1280_STYLE ========================= */
 
 /* ========================= DESKTOP_1440_STYLE ========================= */
 
-@media screen and (min-width:1440px) {
-
-    .comments-item {
-        width: 396px;
-    }
+@media screen and (min-width: 1440px) {
+  .comments-item {
+    width: 396px;
+  }
 }
 
 /* ========================= /DESKTOP_1440_STYLE ========================= */
