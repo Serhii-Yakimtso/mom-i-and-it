@@ -15,6 +15,9 @@
     background-image: url(../img/mobile/women_mobile@2x.jpg);
   }
 }
+.order-position {
+  top: -142px;
+}
 
 .order-title {
   color: var(--mainColor);
