@@ -24,14 +24,11 @@
 
 .footer-list {
     display: flex;
-    gap: 40px;
+
+  
 }
 
-.footer-list-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}  
+
 
 
 
@@ -56,6 +53,21 @@
 }
 
 
+@media screen and (max-width: 767px) {
+    .footer-list {
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 25px 40px;
+      height: 65px;
+    }
+  
+    .footer-item:nth-child(-n + 2) {
+      width: 116px;
+    }
+  
+   
+  }
+
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
     screen and (min-resolution: 2dppx) and (max-width: 767px),
     screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
@@ -68,10 +80,7 @@
 /* ===============FOOTER TABLET STYLES================ */
 
 @media screen and (min-width: 768px) {
-    .footer-list-wrapper {
-        flex-direction: row;
-        gap: 25px;
-    }  
+   
 
     .footer-list {
         gap: 25px;
