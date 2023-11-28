@@ -197,6 +197,13 @@
   .order-button:focus {
     border-color: var(--accentColor);
   }
+  .order-button-icon {
+    transition: transform 900ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .order-button:hover .order-button-icon,
+  .order-button:focus .order-button-icon {
+    transform: rotate(-360deg);
+  }
   .order-bg {
     width: 289px;
     background-image: url(../img/desktop_1280/bg_order_1280.png);
