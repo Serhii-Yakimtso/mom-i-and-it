@@ -96,8 +96,6 @@
   color: var(--darkColor);
 }
 
-/* ====================== TABLET ====================== */
-
 @media screen and (min-width: 768px) {
   .menu-container {
     width: 380px;

@@ -1,5 +1,3 @@
-/* ========================= MOBILE_STYLE ========================= */
-
 .comments {
   padding-bottom: 80px;
 }
@@ -63,10 +61,6 @@
   color: var(--textColor);
 }
 
-/* ========================= /MOBILE_STYLE ========================= */
-
-/* ========================= TABLET_STYLE ========================= */
-
 @media screen and (min-width: 768px) {
   .comments-container {
     justify-content: center;
@@ -86,17 +80,13 @@
   }
 }
 
-/* ========================= /TABLET_STYLE ========================= */
-
-/* ========================= DESKTOP_1280_STYLE ========================= */
-
 @media screen and (min-width: 1280px) {
   .comments-container {
     justify-content: space-between;
   }
 
   .comments-item {
-    width: calc((100%-52px) / 3);
+    width: calc((100% - 52px) / 3);
   }
 
   .comments-item:last-child {
@@ -111,14 +101,8 @@
   }
 }
 
-/* ========================= /DESKTOP_1280_STYLE ========================= */
-
-/* ========================= DESKTOP_1440_STYLE ========================= */
-
 @media screen and (min-width: 1440px) {
   .comments-item {
     width: 396px;
   }
 }
-
-/* ========================= /DESKTOP_1440_STYLE ========================= */

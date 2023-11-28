@@ -39,12 +39,6 @@
   fill: var(--mainColor);
 }
 
-.social-links:hover,
-.social-links:focus {
-  border: 1px solid var(--accentColor);
-  background-color: transparent;
-}
-
 .open-burger-btn {
   border: none;
   background-color: transparent;
@@ -64,8 +58,6 @@
     height: 30px;
   }
 }
-
-/* ===== COMMON DESKTOP STYLES ===== */
 
 @media screen and (min-width: 1280px) {
   .header-container {
@@ -109,13 +101,19 @@
     font-style: normal;
   }
 
+  .header-contacts-link:hover,
+  .header-contacts-link:focus {
+    border: 1px solid var(--accentColor);
+  }
+
   .social-media {
     margin-left: 20px;
   }
 
-  .header-contacts-link:hover,
-  .header-contacts-link:focus {
+  .social-links:hover,
+  .social-links:focus {
     border: 1px solid var(--accentColor);
+    background-color: transparent;
   }
 
   .open-burger-btn {
@@ -123,7 +121,6 @@
   }
 }
 
-/* ===== COMMON DESKTOP STYLES ===== */
 @media screen and (min-width: 1440px) {
   .header-container {
     max-width: 1440px;

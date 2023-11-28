@@ -10,7 +10,7 @@
 }
 @media screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx),
-  screen and (min-device-psxel-ratio: 2) {
+  screen and (min-device-pixel-ratio: 2) {
   .order-background {
     background-image: url(../img/mobile/women_mobile@2x.jpg);
   }
@@ -23,7 +23,7 @@
   color: var(--mainColor);
   font-size: 32px;
   font-weight: 500;
-  line-height: 1.375; /* 137.5% */
+  line-height: 1.375;
   letter-spacing: -0.03em;
   margin-bottom: 40px;
 }
@@ -101,7 +101,6 @@
   transform: rotate(-30deg);
   fill: var(--accentColor);
 }
-/* ========================TABLET================================ */
 @media screen and (min-width: 768px) {
   .order-background {
     max-width: 768px;
@@ -112,14 +111,14 @@
 
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
-    screen and (min-device-psxel-ratio: 2) {
+    screen and (min-device-pixel-ratio: 2) {
     .order-background {
       background-image: url(../img/tablet/women_tablet@2x.jpg);
     }
   }
   .order-title {
     font-size: 44px;
-    line-height: 1.32; /* 131.818% */
+    line-height: 1.32;
   }
   .order-input {
     max-width: 508px;
@@ -157,13 +156,12 @@
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
-    screen and (min-device-psxel-ratio: 2) {
+    screen and (min-device-pixel-ratio: 2) {
     .order-bg {
       background-image: url(../img/tablet/bg_order_tablet@2x.png);
     }
   }
 }
-/* ============DESKTOP 1280=============== */
 @media screen and (min-width: 1280px) {
   .order-background {
     max-width: 1282px;
@@ -174,7 +172,7 @@
 
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
-    screen and (min-device-psxel-ratio: 2) {
+    screen and (min-device-pixel-ratio: 2) {
     .order-background {
       background-image: url(../img/desktop_1280/women_1280@2x.jpg);
     }
@@ -213,13 +211,12 @@
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
-    screen and (min-device-psxel-ratio: 2) {
+    screen and (min-device-pixel-ratio: 2) {
     .order-bg {
       background-image: url(../img/desktop_1280/bg_order_1280@2x.png);
     }
   }
 }
-/* ============DESKTOP 1440=============== */
 @media screen and (min-width: 1440px) {
   .order-background {
     max-width: 1440px;
@@ -229,7 +226,7 @@
 
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
-    screen and (min-device-psxel-ratio: 2) {
+    screen and (min-device-pixel-ratio: 2) {
     .order-background {
       background-image: url(../img/desktop_1440/women_1440@2x.jpg);
     }
@@ -240,7 +237,7 @@
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
-    screen and (min-device-psxel-ratio: 2) {
+    screen and (min-device-pixel-ratio: 2) {
     .order-bg {
       background-image: url(../img/desktop_1440/bg_order_1440@2x.png);
     }

@@ -1,4 +1,3 @@
-/* ===== Our Collection Mobile Styles ===== */
 
 .collection {
   padding-top: 18px;
@@ -99,9 +98,6 @@
     background-image: url('../img/mobile/bg_price_mobile@2x.png');
   }
 }
-/* ===== /Our Collection Mobile Styles ===== */
-
-/* ===== Our Collection Tablet Styles ===== */
 
 @media screen and (min-width: 768px) {
   .collection {
@@ -154,9 +150,6 @@
     background-image: url('../img/tablet/bg_price_tablet@2x.png');
   }
 }
-/* ===== /Our Collection Tablet Styles ===== */
-
-/* ===== Our Collection Desktop_1280 Styles ===== */
 
 @media screen and (min-width: 1280px) {
   .collection {
@@ -186,9 +179,6 @@
     background-image: url('../img/desktop_1280/bg_price_desktop@2x.png');
   }
 }
-/* ===== /Our Collection Desktop_1280 Styles ===== */
-
-/* ===== Our Collection Desktop_1440 Styles ===== */
 
 @media screen and (min-width: 1440px) {
   .collection-list {
@@ -199,4 +189,3 @@
     width: 400px;
   }
 }
-/* ===== /Our Collection Desktop_1440 Styles ===== */

@@ -9,7 +9,7 @@
 }
 @media screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx),
-  screen and (min-divice-pixel-ratio: 2) {
+  screen and (min-device-pixel-ratio: 2) {
   .about {
     background-image: url(../img/mobile/bg_about_mobile@2x.png);
   }
@@ -31,7 +31,6 @@
   letter-spacing: -0.04em;
   color: var(--textColor);
   margin-bottom: 20px;
-  /* =============TABLET============== */
 }
 @media screen and (min-width: 768px) {
   .about {
@@ -42,7 +41,7 @@
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
-    screen and (min-divice-pixel-ratio: 2) {
+    screen and (min-device-pixel-ratio: 2) {
     .about {
       background-image: url(../img/tablet/bg_about_tablet@2x.png);
     }
@@ -59,7 +58,6 @@
   }
 }
 
-/* ========================DESKTOP 1280===================== */
 @media screen and (min-width: 1280px) {
   .about {
     background-image: url(../img/desktop_1280/bg_about_1280.png);
@@ -69,7 +67,7 @@
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
-    screen and (min-divice-pixel-ratio: 2) {
+    screen and (min-device-pixel-ratio: 2) {
     .about {
       background-image: url(../img/desktop_1280/bg_about_1280@2x.png);
     }
@@ -92,7 +90,7 @@
 
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
-    screen and (min-divice-pixel-ratio: 2) {
+    screen and (min-device-pixel-ratio: 2) {
     .about {
       background-image: url(../img/desktop_1440/bg_about_1440@2x.png);
     }
