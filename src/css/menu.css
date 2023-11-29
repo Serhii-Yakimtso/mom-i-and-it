@@ -6,7 +6,6 @@
   right: 0;
   z-index: 999999999;
   background-color: rgba(46, 47, 66, 0.9);
-
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -21,27 +20,29 @@
 }
 
 .menu-container {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 0;
   right: 0;
   width: 274px;
-  height: 100vh;
-  padding: 20px 20px;
-
+  height: 100%;
   background-color: var(--accentColor);
-  background-image: url(../img/mobile/bg_mobal_mobile.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 100% 251px;
-
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.menu-background {
+  height: 251px;
+  background-image: url(../img/mobile/bg_mobal_mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 320px),
   screen and (min-resolution: 2dppx) and (min-width: 320px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
-  .menu-container {
+  .menu-background {
     background-image: url(../img/mobile/bg_mobal_mobile@2x.png);
   }
 }
@@ -49,7 +50,7 @@
 .menu-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: calc((100vh - 812px) / 2 + 185px);
+  padding: 20px 20px 0px;
 }
 
 .menu-number-link {
@@ -57,7 +58,6 @@
   padding: 12px 20px;
   border: 1px solid rgba(28, 34, 37, 0.1);
   border-radius: 15px;
-
   color: var(--darkColor);
   font-size: 12px;
   font-weight: 400;
@@ -86,6 +86,9 @@
   align-items: flex-end;
   flex-direction: column;
   gap: 20px;
+  padding-right: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .menu-modal-nav-link {
@@ -99,21 +102,19 @@
 @media screen and (min-width: 768px) {
   .menu-container {
     width: 380px;
-    padding: 20px 32px;
+  }
+  .menu-background {
+    height: 364px;
     background-image: url(../img/tablet/bg_modal_tablet.png);
-    background-size: 100% 364px;
+    background-size: 100%;
   }
 
   @media screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-    .menu-container {
+    .menu-backgroundr {
       background-image: url(../img/tablet/bg_modal_tablet@2x.png);
     }
-  }
-
-  .menu-wrapper {
-    margin-bottom: calc((100vh - 1024px) / 2 + 223px);
   }
 
   .menu-modal-svg {
@@ -131,5 +132,11 @@
 
   .menu-header-container {
     gap: 25px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu-backdrop {
+    display: none;
   }
 }
