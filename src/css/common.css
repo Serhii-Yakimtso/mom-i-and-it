@@ -37,10 +37,11 @@ body {
   border-radius: 15px;
   border: 1px solid var(--borderColor);
 }
-
-.link:hover,
-.link:focus {
-  color: var(--accentColor);
+@media screen and (min-width: 1280px) {
+  .link:hover,
+  .link:focus {
+    color: var(--accentColor);
+  }
 }
 
 @media screen and (min-width: 320px) {
