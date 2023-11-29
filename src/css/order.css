@@ -153,6 +153,7 @@
     width: 323px;
     height: 484px;
     background-image: url(../img/tablet/bg_order_tablet.png);
+    background-size: 100%;
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
