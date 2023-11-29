@@ -24,20 +24,11 @@
 }
 
 .collection-overlay-wrapper {
-  position: relative;
-  overflow: hidden;
   border-radius: 4px;
 }
 
 .collection-list-name {
   padding-top: 18px;
-}
-
-@media screen and (max-width: 374px) {
-  .collection-list-item {
-    max-width: 100%;
-    width: 335px;
-  }
 }
 
 .collection-list-title {
@@ -62,6 +53,11 @@
 }
 
 @media screen and (max-width: 374px) {
+  .collection-list-item {
+    max-width: 100%;
+    width: 335px;
+  }
+
   .collection-container {
     background-position: 0px 241px;
   }
@@ -146,6 +142,12 @@
   .collection-list-item {
     width: 347px;
   }
+
+  .collection-overlay-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
   .collection-text-overlay {
     position: absolute;
     top: 0;
