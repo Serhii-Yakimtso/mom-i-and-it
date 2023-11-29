@@ -82,6 +82,7 @@
     font-size: 14px;
     text-transform: uppercase;
     line-height: 1.28;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .header-contacts {
@@ -99,20 +100,24 @@
     line-height: 1.42;
     text-transform: uppercase;
     font-style: normal;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .header-contacts-link:hover,
   .header-contacts-link:focus {
-    border: 1px solid var(--accentColor);
+    border-color: var(--accentColor);
   }
 
   .social-media {
     margin-left: 20px;
   }
-
+  .social-links {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
   .social-links:hover,
   .social-links:focus {
-    border: 1px solid var(--accentColor);
+    border-color: var(--accentColor);
     background-color: transparent;
   }
 
