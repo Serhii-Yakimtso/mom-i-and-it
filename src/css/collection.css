@@ -9,7 +9,7 @@
   background-position: 0px 298px;
 }
 
-.collection-section-title {
+.collection-title {
   text-align: center;
   font-size: 32px;
   font-weight: 500;
@@ -28,11 +28,11 @@
   overflow: hidden;
 }
 
-.collection-list-name {
+.collection-item-description {
   padding-top: 18px;
 }
 
-.collection-list-title {
+.collection-item-title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -45,7 +45,7 @@
   margin-bottom: 8px;
 }
 
-.collection-list-text {
+.collection-item-text {
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
@@ -54,13 +54,13 @@
 }
 
 @media screen and (max-width: 374px) {
+  .collection-container {
+    background-position: 0px 241px;
+  }
+
   .collection-list-item {
     max-width: 100%;
     width: 335px;
-  }
-
-  .collection-container {
-    background-position: 0px 241px;
   }
 }
 
@@ -69,6 +69,12 @@
   screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
   .collection-container {
     background-image: url('../img/mobile/bg_price_mobile@2x.png');
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .collection-overlay-text {
+    display: none;
   }
 }
 
@@ -84,7 +90,7 @@
     background-position: 0px 221px;
   }
 
-  .collection-section-title {
+  .collection-title {
     font-size: 44px;
     line-height: 1.45;
   }
@@ -103,11 +109,11 @@
     margin-bottom: 0;
   }
 
-  .collection-list-title {
+  .collection-item-title {
     font-size: 18px;
   }
 
-  .collection-list-text {
+  .collection-item-text {
     font-size: 18px;
   }
 }
@@ -119,11 +125,7 @@
     background-image: url('../img/tablet/bg_price_tablet@2x.png');
   }
 }
-@media screen and (max-width: 1279px) {
-  .collection-text-overlay {
-    display: none;
-  }
-}
+
 @media screen and (min-width: 1280px) {
   .collection {
     padding-top: 70px;
@@ -148,7 +150,7 @@
     position: relative;
   }
 
-  .collection-text-overlay {
+  .collection-overlay-text {
     position: absolute;
     top: 0;
     left: 0;
@@ -167,7 +169,7 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .collection-list-item:hover .collection-text-overlay {
+  .collection-list-item:hover .collection-overlay-text {
     transform: translateY(0%);
   }
 }
