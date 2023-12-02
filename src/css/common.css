@@ -1,19 +1,30 @@
 html {
   scroll-behavior: smooth;
 }
-*::before,
-*::after {
-  outline: 1px solid red;
-  box-sizing: border-box;
-}
+
 body {
   font-family: 'Manrope', sans-serif;
   background-color: #1c2225;
 }
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  border: 1px solid var(--borderColor);
+}
+
 .header-position {
   visibility: hidden;
-  top: -92px;
   position: relative;
+  top: -92px;
 }
 
 .visually-hidden {
@@ -27,21 +38,6 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 15px;
-  border: 1px solid var(--borderColor);
-}
-@media screen and (min-width: 1280px) {
-  .link:hover,
-  .link:focus {
-    color: var(--accentColor);
-  }
 }
 
 @media screen and (min-width: 320px) {
@@ -82,7 +78,6 @@ body {
   .container {
     padding-left: 32px;
     padding-right: 32px;
-
     max-width: 768px;
   }
 }
@@ -97,6 +92,11 @@ body {
     padding-left: 100px;
     padding-right: 100px;
   }
+
+  .link:hover,
+  .link:focus {
+    color: var(--accentColor);
+  }
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
@@ -109,7 +109,6 @@ body {
   .container {
     padding-left: 100px;
     padding-right: 100px;
-
     max-width: 1440px;
   }
 }
