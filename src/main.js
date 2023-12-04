@@ -3,7 +3,7 @@
     openModalBtn: document.querySelector('[data-modal-open]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
-    menuLink: document.querySelectorAll('.menu-modal-nav-link'),
+    menuLink: document.querySelectorAll('.menu-nav-link'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
